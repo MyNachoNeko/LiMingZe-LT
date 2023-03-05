@@ -273,17 +273,8 @@
             document.getElementById("life_introduction").innerHTML = introduction;
             document.getElementById("Gongpin").innerHTML = "给 "+ name +" 送上贡品";
             document.getElementById("loading_tips").innerHTML = "马上就好";
-
-            /* Gitalk 评论区配置 */
-            var gitalk = new Gitalk({
-                clientID: 'be96a41462c84525e077',
-                clientSecret: '5be136bc48441c539d9203aa5c61dbadb42d3309',
-                repo: 'LiMingZe-LT',
-                owner: 'MyNachoNeko',
-                admin: ['MyNachoNekot'],
-                id: location.pathname,      // Ensure uniqueness and length less than 50
-                distractionFreeMode: false  // Facebook-like distraction free mode
-            });
+                 /* Gitalk 评论区配置 */
+  
             gitalk.render('gitalk-container');
 
             document.getElementById("UpStream").onclick = function(){
